@@ -16,8 +16,8 @@ print(task.model_dump())
 async def main():
     start = time.perf_counter()
     result1, result2 = await asyncio.gather(
-        analyze_repository(task.repository_url),
-        search_documentation(task.repository_url),
+        analyze_repository("bad-repository"),
+        search_documentation("bad-query"),
     )
     elapsed = time.perf_counter() - start
     print(f"elapsed time: {elapsed:0.2f} seconds")

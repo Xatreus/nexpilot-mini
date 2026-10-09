@@ -4,3 +4,7 @@ class NexpilotError(Exception):
 
 class RepositoryError(NexpilotError):
     pass
+
+
+class DocumentationError(NexpilotError):
+    pass
